@@ -15,6 +15,12 @@ type Producttype = {
 
 export default function Home() {
   const [product, setProduct] = useState<Producttype | null>(null);
+  const [items, setItems] = useState<Producttype[]>([]);
+  const [showScanner, setShowScanner] = useState<boolean>(false);
+  const [animateTriangle, setAnimateTriangle] = useState<boolean>(false);
+  const [searchCode, setSearchCode] = useState<string>("");
+
+
   
 
   return (
